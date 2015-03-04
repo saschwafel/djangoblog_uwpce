@@ -88,6 +88,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'mysite/templates'), )
 LOGIN_URL = '/login/'
